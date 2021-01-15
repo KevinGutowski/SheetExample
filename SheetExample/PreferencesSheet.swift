@@ -15,10 +15,10 @@ class PreferencesSheet: NSWindowController {
     
     @IBAction func clickedOK(_ sender: Any) {
         guard let window = self.window else { return }
-        window.endSheet(window, returnCode: NSApplication.ModalResponse.OK)
+        window.sheetParent?.endSheet(window, returnCode: NSApplication.ModalResponse.OK)
     }
     @IBAction func clickedCancel(_ sender: Any) {
         guard let window = self.window else { return }
-        window.endSheet(window, returnCode: NSApplication.ModalResponse.cancel)
+        window.sheetParent?.endSheet(window, returnCode: NSApplication.ModalResponse.cancel)
     }
 }

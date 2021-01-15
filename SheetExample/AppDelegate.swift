@@ -12,7 +12,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet var window: NSWindow!
     
-    let sheetController = PreferencesSheet()
+    let sheetController = PreferencesSheet() // Need a strong reference to keep this around
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
@@ -24,11 +24,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBAction func showSheet(_ sender: Any) {
         guard let sheetWindow = sheetController.window else { return }
+        
+        // ensure that "Visable at launch" and title bar is shown
         window.beginSheet(sheetWindow) { (response:NSApplication.ModalResponse) in
             if (response == NSApplication.ModalResponse.OK) {
                 print("Clicked OK")
             } else {
-                print("canceled")
+                print("Canceled")
             }
         }
     }

@@ -690,9 +690,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="baX-2f-AOX">
-                        <rect key="frame" x="185" y="162" width="112" height="32"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="baX-2f-AOX">
+                        <rect key="frame" x="184" y="163" width="112" height="32"/>
                         <buttonCell key="cell" type="push" title="Show Sheet" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="szC-oh-QrJ">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -702,6 +701,10 @@
                         </connections>
                     </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="baX-2f-AOX" firstAttribute="centerY" secondItem="EiT-Mj-1SZ" secondAttribute="centerY" id="A1Z-Rg-dPT"/>
+                    <constraint firstItem="baX-2f-AOX" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="Mqt-9D-uIf"/>
+                </constraints>
             </view>
             <point key="canvasLocation" x="-291" y="-123"/>
         </window>
