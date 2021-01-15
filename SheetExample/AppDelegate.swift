@@ -12,7 +12,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet var window: NSWindow!
     
-    let windowController = PreferencesSheet()
+    let sheetController = PreferencesSheet()
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
@@ -23,7 +23,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @IBAction func showSheet(_ sender: Any) {
-        guard let sheetWindow = windowController.window else { return }
+        guard let sheetWindow = sheetController.window else { return }
         window.beginSheet(sheetWindow) { (response:NSApplication.ModalResponse) in
             if (response == NSApplication.ModalResponse.OK) {
                 print("Clicked OK")
