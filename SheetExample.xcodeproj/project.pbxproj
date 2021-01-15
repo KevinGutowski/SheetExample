@@ -10,6 +10,8 @@
 		03A2DA5325B15824000DFCAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A2DA5225B15824000DFCAF /* AppDelegate.swift */; };
 		03A2DA5525B15824000DFCAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03A2DA5425B15824000DFCAF /* Assets.xcassets */; };
 		03A2DA5825B15824000DFCAF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A2DA5625B15824000DFCAF /* MainMenu.xib */; };
+		03A2DA6325B1586B000DFCAF /* PreferencesSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A2DA6125B1586B000DFCAF /* PreferencesSheet.swift */; };
+		03A2DA6425B1586B000DFCAF /* PreferencesSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03A2DA6225B1586B000DFCAF /* PreferencesSheet.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		03A2DA5725B15824000DFCAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		03A2DA5925B15824000DFCAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03A2DA5A25B15824000DFCAF /* SheetExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SheetExample.entitlements; sourceTree = "<group>"; };
+		03A2DA6125B1586B000DFCAF /* PreferencesSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesSheet.swift; sourceTree = "<group>"; };
+		03A2DA6225B1586B000DFCAF /* PreferencesSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesSheet.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 				03A2DA5225B15824000DFCAF /* AppDelegate.swift */,
 				03A2DA5425B15824000DFCAF /* Assets.xcassets */,
 				03A2DA5625B15824000DFCAF /* MainMenu.xib */,
+				03A2DA6125B1586B000DFCAF /* PreferencesSheet.swift */,
+				03A2DA6225B1586B000DFCAF /* PreferencesSheet.xib */,
 				03A2DA5925B15824000DFCAF /* Info.plist */,
 				03A2DA5A25B15824000DFCAF /* SheetExample.entitlements */,
 			);
@@ -117,6 +123,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A2DA6425B1586B000DFCAF /* PreferencesSheet.xib in Resources */,
 				03A2DA5525B15824000DFCAF /* Assets.xcassets in Resources */,
 				03A2DA5825B15824000DFCAF /* MainMenu.xib in Resources */,
 			);
@@ -129,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A2DA6325B1586B000DFCAF /* PreferencesSheet.swift in Sources */,
 				03A2DA5325B15824000DFCAF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

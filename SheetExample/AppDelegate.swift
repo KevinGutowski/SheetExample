@@ -11,8 +11,9 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet var window: NSWindow!
-
-
+    
+    let windowController = PreferencesSheet()
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
     }
@@ -21,6 +22,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
 
-
+    @IBAction func showSheet(_ sender: Any) {
+        guard let sheetWindow = windowController.window else { return }
+        window.beginSheet(sheetWindow) { (response:NSApplication.ModalResponse) in
+            if (response == NSApplication.ModalResponse.OK) {
+                print("Clicked OK")
+            } else {
+                print("canceled")
+            }
+        }
+    }
+    
 }
 
